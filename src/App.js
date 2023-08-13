@@ -90,7 +90,6 @@ function App() {
         {" "}
         <img className="icon" src={whatsAppIcon} alt="" />
       </a>
-      <a href="">REFRESH</a>
     </div>
   );
 }

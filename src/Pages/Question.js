@@ -2,32 +2,30 @@ const questions = [
   {
     id: 1,
     question: "What is the meaning of negotiable item",
-    answer:
-      "negotiableItems are the wears that you can still ask the seller maybe he/she can accept the amount you want to bid for a particular wear ",
+    answer:"Negotiable items are Wears where you can inquire if the seller would accept your desired bid, potentially allowing you to secure a particular wear at your preferred price.",
   },
   {
     id: 2,
     question: "what is the meaning of Non-negotiableIte ",
-    answer:
-      "these are the wears that you can't negotiate with the seller so any price you see on the wear is the final price ",
+    answer:"These are non-negotiable items, where the price listed for the wear is final and not open to negotiation with the seller."
+     
   },
   {
     id: 3,
     question: "how do i show the seller the wear i want to buy ",
-    answer:
-      "that's quite easy, hold on to the wear you want to buy and download it and click on the whatsApp icon to contact the seller  ",
+    answer:"Here's a simple process: just select the item you wish to purchase, download it, and then tap the WhatsApp icon to easily get in touch with the seller."
   },
   {
     id: 4,
     question: "What if am not using whatsApp",
-    answer:
-      "we got you , message me through my email  and attach the image of the wear you want to buy ",
+    answer:"Understood. Please send me a message via email and attach a picture of the Wear you're interested in purchasing."
+      
   },
   {
     id: 5,
     question: "Do you do delivery?",
     answer:
-      "yes! i do delivery nationwide except east side and you'll be the one to pay for the delivery ",
+      "Certainly! We provide nationwide delivery for our products, except for the eastern region. Please note that you'll be responsible for covering the delivery charges. ",
   },
 ];
 
