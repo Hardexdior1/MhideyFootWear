@@ -16,9 +16,13 @@
 img{
     width: 100%;
 }
+.nav h1{
+    color: green;
+}
 
 .logo{
     text-decoration: none;
+    color: green;
     /* text-shadow: 2px 3px 4px rgb(138, 136, 134); */
     font-size: 2rem;
 }

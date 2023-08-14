@@ -109,7 +109,7 @@ const products=[
         negotiable:false,
         image:img8,
         category:'Women',
-        price:3500,
+        price:4000,
 
     },
     {
@@ -143,7 +143,7 @@ const products=[
         image:img20,
 
         category:'Men',
-        price:20000,
+        price:25000,
 
     },
     {
@@ -160,7 +160,7 @@ const products=[
         negotiable:true,
         image:img111,
         category:'Women',
-        price:3500,
+        price:4000,
 
     },
     {
@@ -168,7 +168,7 @@ const products=[
         negotiable:false,
         image:img3,
         category:'Women',
-        price:3500,
+        price:4000,
     },
 
 
