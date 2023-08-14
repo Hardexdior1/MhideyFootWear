@@ -25,7 +25,7 @@ const questions = [
     id: 5,
     question: "Do you do delivery?",
     answer:
-      "Certainly! We provide nationwide delivery for our products, except for the eastern region. Please note that you'll be responsible for covering the delivery charges. ",
+      "Certainly! We provide nationwide delivery for our products, except for the Northern region. Please note that you'll be responsible for covering the delivery charges. ",
   },
 ];
 

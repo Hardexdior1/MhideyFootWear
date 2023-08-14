@@ -11,7 +11,7 @@ const Footer = () => {
                 <h3>My contact</h3>
                <ul>
                <li> <b>phone:</b> 0702 639 9492  </li>
-                <li> <b>Email:</b> belloayomide36@gmail.com</li>
+                <li> <b>Email:</b> belloayomide26@gmail.com</li>
                </ul>
             </div>
 

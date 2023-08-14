@@ -58,21 +58,22 @@ const products=[
         price:10000,
 
     },
+    
     {
-        name:'Siede pam',
+        name:'Female sultan ',
         negotiable:false,
-        image:img22,
-        category:'Women',
-        price:3500,
-
-    },
-    {
-        name:'Metallic tripple ',
-        negotiable:true,
         image:img19,
 
         category:'Women',
         price:4000,
+
+    },
+    {
+        name:'Men cross ',
+        negotiable:true,
+        image:img15,
+        category:'Men',
+        price:8000,
 
     },
     {
@@ -98,7 +99,7 @@ const products=[
         negotiable:false,
         image:img5,
         category:'Women',
-        price:3500,
+        price:4000,
 
     },
 
@@ -122,7 +123,7 @@ const products=[
     },
     
     {
-        name:'Metallic tripple ',
+        name:'Red base  ',
         negotiable:true,
         image:img13,
         category:'Men',
@@ -138,7 +139,15 @@ const products=[
 
     },
     {
-        name:'Metallic tripple ',
+        name:'Siede pam',
+        negotiable:false,
+        image:img22,
+        category:'Women',
+        price:4000,
+
+    },
+    {
+        name:'Men navy ',
         negotiable:true,
         image:img20,
 
@@ -191,21 +200,14 @@ const products=[
     
 
     {
-        name:'Metallic tripple ',
+        name:'Summer clip',
         negotiable:true,
         image:img14,
         category:'Women',
         price:4000,
 
     },
-    {
-        name:'Metallic tripple ',
-        negotiable:true,
-        image:img15,
-        category:'Men',
-        price:8000,
-
-    },
+   
     {
         name:'Tuscany leather',
         negotiable:false,
@@ -215,7 +217,7 @@ const products=[
 
     },
     {
-        name:'Metallic tripple ',
+        name:'Flat trendy ',
         negotiable:true,
         image:img16,
         category:'Women',
@@ -223,7 +225,7 @@ const products=[
 
     },
     {
-        name:'Metallic tripple ',
+        name:'Davno',
         negotiable:false,
         image:img17,
 
@@ -232,7 +234,7 @@ const products=[
 
     },
     {
-        name:'Metallic tripple ',
+        name:'V-slide ',
         negotiable:true,
         image:img18,
 
@@ -245,7 +247,7 @@ const products=[
     
 
     {
-        name:'Metallic tripple ',
+        name:'Billionaire leather',
         negotiable:true,
         image:img21,
 
