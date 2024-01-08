@@ -1,218 +1,193 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
 
-  /* provides background color to body */
- 
 
-  /* ----- container stylings:
-    -> centers the whole content of the page
-    -> defines width and height for container ----- */
-  .container {
+.heroSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+      background-color: blue;
+      opacity: .7 ;
+      text-align: center;
+    padding: 80px 20px ;
+}
+@media (min-width:1024px) {
+    .heroSection{
+        padding: 15% 20px 10% 20px  ;
+    }
+}
+.heroSection p{
+    margin-top: 10px ;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman',;
+}
+.heroSection h1{
+    margin-bottom: 10px ;
+    font-size: 2.3rem;
+}
+.heroSection button{
+    margin-top: 20px;
+    color: #800080;
+    font-weight:600;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 15px ;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* about.css */
+.makingWrap{
+    padding:5% 10% 5% 10%;
+}
+.makingSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+   padding: 10% 0px 10% 0px ;
+}
+.makingSection h4{
+    color: #000397;
+}
+.makingSection p{
+    color: #848991;
+    line-height: 30px;
+    font-size: 18px ;
+}
+
+.samsungCompanyWrap p{
+    font-size: 19.2px ;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0;
+    line-height: 30px ;
+}
+.samsungCompanyWrap h4{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.samsungCompanyWrap img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.samsungCompanyWrap button{
+    padding: 20px 42px ;
+background-color: #000397;
+border: none;
+border-radius: 20px ;
+color: white;
+font-weight: 800;
+cursor: pointer;
+margin-top: 20px;
+}
+.story{
+    margin-bottom: 0;
+}
+.flexJoin{
+    display: flex;
+    justify-content: end;
+}
+.ourStoryFlex{
+    /* display: flex; */
+   
     align-items: center;
-    margin: auto;
-    /* width: 800px; */
-    height: 600px;
-  }
-  /* ----- end of container stylings ----- */
-
-  /* provides padding to main heading */
-  .main-heading {
-    padding: 2rem 0 2rem 0;
-  }
-
-  
- 
-  /* ----- carousel content stylings ----- */
-  /* places the carousel content on center of the carousel */
- 
-  
-  /*----- end of carousel content stylings ----- */
-
-  /* ----- slideshow stylings ----- */
-  .slideshow {
-    height: 100%;
-    overflow: hidden; /* to hide slides in x-direction */
-    position: relative;
-  }
-  /* wrapper which wraps all the slideshow images stylings */
-  .slideshow-wrapper {
+    justify-content: space-between;
+    /* gap: 10%; */
+}
+.ourStoryFlex img{
+    width: 65%;
+    /* height: 20%; */
+}
+.gridImages{
     display: flex;
-    /* We give it width as 400% because we are making a
-        4 image carousel. If you want to make for example,
-        5 images carousel, then give width as 500%. */
-    width: 400%;
-    height: 100%;
+    grid-template-columns: 1fr 1fr ;
     position: relative;
-    /* you can change the animation settings from below */
-    animation: slideshow 20s infinite;
-  }
-  /* define width and height for images*/
-  .slide {
-    width: 100%;
-    height: 100%;
-  }
-  .slide-img {
-    width: 100%;
-    height: 500px;
-    object-fit: contain;
+}
+.woman{
+margin-right: -100px;
+z-index: 10;
+width: 60%;
+}
+.centerH1{
+    text-align: center;
+}
 
-  }
-  /* @keyframes are used to provide animations
-    We make these settings for 4 image carousel.
-    Make modification according to your needs. */
-  @keyframes slideshow {
-    0% {
-      left: 0;
-    }
-    10% {
-      left: 0;
-    }
-    15% {
-      left: -100%;
-    }
-    25% {
-      left: -100%;
-    }
-    30% {
-      left: -200%;
-    }
-    40% {
-      left: -200%;
-    }
-    45% {
-      left: -300%;
-    }
-    55% {
-      left: -300%;
-    }
-    60% {
-      left: -200%;
-    }
-    70% {
-      left: -200%;
-    }
-    75% {
-      left: -100%;
-    }
-    85% {
-      left: -100%;
-    }
-    90% {
-      left: 0%;
-    }
-  }
-  /* ----- end of slideshow stylings ----- */
 
-  /* ----- carousel control buttons stylings ----- */
-  .slide-btn {
-    background-color: #bbb;
-    border-radius: 50%;
-    border: 0.2rem solid #d38800;
-    width: 1.2rem;
-    height: 1.2rem;
-    outline: none;
-    cursor: pointer;
-    /* stylings for positioning the buttons at
-        the bottom of the carousel */
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 70;
-  }
-  /* As we provide position as absolute,
-    the buttons places one over the other.
-    So, we have to place them individually
-    at their correct positions. */
-  .slide-btn-1 {
-    left: 45%;
-  }
-  .slide-btn-2 {
-    left: 50%;
-  }
-  .slide-btn-3 {
-    left: 55%;
-  }
-  .slide-btn-4 {
-    left: 60%;
-  }
-  /* When we focus on the particular button,
-    the animation stops to that particular image
-    to which the button is associated. */
-  .slide-btn-1:focus ~ .slideshow-wrapper {
-    animation: none;
-    left: 0;
-  }
-  .slide-btn-2:focus ~ .slideshow-wrapper {
-    animation: none;
-    left: -100%;
-  }
-  .slide-btn-3:focus ~ .slideshow-wrapper {
-    animation: none;
-    left: -200%;
-  }
-  .slide-btn-4:focus ~ .slideshow-wrapper {
-    animation: none;
-    left: -300%;
-  }
-  /* when we focus on the button, the background color changes */
-  .slide-btn:focus {
-    background-color: #308d46;
-  }
-  .carouselFlex {
+
+.undefinedImgAndTextWrap{
+    padding: 5%  10%  ;
     display: flex;
-    align-items: center; 
-    justify-content: center;
-  justify-content: space-between;
-  /* gap: 30px; */
-  flex-direction: row-reverse;
-  padding: 40px 10px ;
-  background-color: #250652;
-  /* background-color: red; */
-  /* flex-wrap: wrap; */
-  /* height: 100vh; */
-  /* background-image: url(../Images/img23.jpg); */
-  background-size: cover;
-  }
-  .mhidey{
-    text-shadow: 4px 3px 2px black;
-    font-weight: bolder;
-  }
-  .carouselFlex img{
-    border-radius: 3rem;
-    /* height: 400px; */
-  }
-  @media (max-width:689px){
-    .carouselFlex{
-      padding: 20px 10px;
-        background-image: url(../Images/img23.jpg);
+    align-items: center;
+    background-color: #e1eaf3b6;
+    justify-content: space-between;
 
-    }
-  }
-  @media (max-width:1200px) {
-    .carouselFlex{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+}
+@media (max-width:767px) {
+    .undefinedImgAndTextWrap{
         flex-direction: column;
-        background-size: none;
-        /* padding: 10x 10px ; */
     }
-  }
-  @media (max-width:1250px){
-    .carouselFlex img{
-        width: 100%;
-        object-fit: cover;
-        border-radius: 1rem;
+}
+.undefinedImgAndTextWrap img{
+    width: 100%;
+}
+.undefinedImgAndTextWrap p{
+    font-size: 24px;
+}
+.undefinedImgAndTextWrap h4{
+    font-size: 16px ;
+    margin-top: 5px;
+}
+.undefinedImgAndTextWrap i{
+    margin-bottom: 0;
+}
+
+
+/* team css  */
+.teamsWrap{
+    padding: 10%;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.teamsWrap p{
+    margin-top: 3px;
+}
+.teamsWrap h4{
+    font-size: 19.2px ;
+    margin-bottom: 0;
+}
+.flexTeamImgAndText{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr ;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+.flexTeamImgAndText2{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr ;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+.teamsWrap img{
+    width: 100%;
+ 
+}
+@media (max-width:767px) {
+    .flexTeamImgAndText2{
+       display: flex;
+       flex-direction: column-reverse;
+       margin-top: 10%;
 
     }
-  }
-  .carouselFlex h1{
-    color: white;
-  }
+.flexTeamImgAndText{
+    grid-template-columns: 1fr;
+    margin-bottom: 10%;
+}
+}
+body{
+    padding-bottom: 400px;
+}
